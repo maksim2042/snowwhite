@@ -1,0 +1,8 @@
+guess-language
+networkx
+matplotlib
+numpy
+nltk
+guess-language
+hottie
+
