@@ -38,7 +38,8 @@ from snowwhite import discourse_mapper
 dm=discourse_mapper.discourse_mapper()
 
 ###for all tweets containing ['user'] and ['text']:
-  dm.add_text(tweet['user'],tweet['text'])`
+  dm.add_text(tweet['user'],tweet['text'])`  
+  
 ```
 
 ### get a sentiment graph:
@@ -46,6 +47,10 @@ dm=discourse_mapper.discourse_mapper()
 sentiment_graph=dm.compute_metrics()
 ```
 
-### get pair-wise sentiment for any pair of users
-dm._get_sentiment('user1','user2')`
+The sentiment graph is a network of pairs of users where value of the edges corresponds to 
+amount of linguistic mirroring obseved in text
 
+### get pair-wise sentiment for any pair of users
+```python
+dm._get_sentiment('user1','user2')`
+```
