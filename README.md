@@ -32,17 +32,16 @@ predictor of what the speaker has actually said then pure word-counting.
 How to run SnowWhite
 --------------------
 
-from snowwhite import discourse_mapper
-import linguist
+`from snowwhite import discourse_mapper
 
 dm=discourse_mapper.discourse_mapper()
 
+###for all tweets containing ['user'] and ['text']:
+  dm.add_text(tweet['user'],tweet['text'])`
 
-tweet={"text":'this is a test','user':'foobar'}
+### get a sentiment graph:
+sentiment_graph=dm.compute_metrics()
 
-tokens=linguist.process(tweet['text'])
-dm.add(tokens,tweet['user']
-
-
-dm._get_sentiment('user1','user2')
+### get pair-wise sentiment for any pair of users
+dm._get_sentiment('user1','user2')`
 
