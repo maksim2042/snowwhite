@@ -32,7 +32,8 @@ predictor of what the speaker has actually said then pure word-counting.
 How to run SnowWhite
 --------------------
 
-```from snowwhite import discourse_mapper
+```python
+from snowwhite import discourse_mapper
 
 dm=discourse_mapper.discourse_mapper()
 
@@ -41,7 +42,9 @@ dm=discourse_mapper.discourse_mapper()
 ```
 
 ### get a sentiment graph:
+```python
 sentiment_graph=dm.compute_metrics()
+```
 
 ### get pair-wise sentiment for any pair of users
 dm._get_sentiment('user1','user2')`
