@@ -2,7 +2,6 @@ import simplejson as json
 import string
 import re
 import networkx as net
-import matplotlib.pyplot as plot
 
 def trim_degrees(g, degree=1):
     """

@@ -13,6 +13,7 @@ setup(
         "networkx >= 1.6",
         "numpy >= 1.6",
         "nltk >= 2.0",
-        "hottie >= 0.1"
+        "hottie >= 0.1",
+        "simplejson"
         ]
 )
